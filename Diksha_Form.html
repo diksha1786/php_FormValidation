@@ -1,0 +1,385 @@
+<html>
+
+<head>
+        <title>Diksha_Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <form action="diksha_form.php" method="post">
+                <div class="container-fluid">
+                        <h3>PERSONAL INFORMATION</h3>
+
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <input type="text" name="Name" placeholder="First Name">
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="mname" placeholder="MiddleName">
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="lname" placeholder="LastName" required>
+                                </div>
+                        </div>
+
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <select class="mdb-select md-form" name="maritalstatus" required>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                                        Martial status
+
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                        class="rounded-circle">
+                                                        Yes </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        No
+                                                </option>
+                                        </select>
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="Father" placeholder="Father /Husband Name" required>
+                                </div>
+                                <div class="col-sm-4">
+                                        <div class="col-sm-4">
+                                                <select class="mdb-select md-form" name="residentialstatus" required>
+                                                        <option value=""
+                                                                data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                                                Residential status
+
+                                                        </option>
+                                                        <option value=""
+                                                                data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                                class="rounded-circle">
+                                                                Yes </option>
+                                                        <option value=""
+                                                                data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                                class="rounded-circle">
+                                                                No
+                                                        </option>
+                                                </select>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <input type="text" name="PanNumber" placeholder=" PanNumber" required>
+                                </div>
+                                <div class="col-sm-4">
+                                        <select class="mdb-select md-form" name="tax" required>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                                        Tax Resident of India
+
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                        class="rounded-circle">
+                                                        Yes </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        No
+                                                </option>
+                                        </select>
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="AadarNO" placeholder="AAdahar No">
+                                </div>
+                        </div>
+
+                        <h3>Contact Information</h3>
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <input type="text" name="MailingaddressLine1"
+                                                placeholder="Mailing Address line1" required>
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="Mailingaddressline2"
+                                                placeholder="Mailing Address Line2">
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="state" placeholder="State" required>
+                                </div>
+                        </div>
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <input type="text" name="city" placeholder="City" required>
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="Pincode" placeholder="Pincode" required>
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="phone" placeholder="Mobile" required>
+                                </div>
+                        </div>
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <input type="Email" name="EmailId" placeholder="Email Id" required>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <p>Is Your permanent address same as the mailing address</p>
+                        </div>
+                        <div class="row">
+                                <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="defaultUnchecked"
+                                                name="defaultExampleRadios">
+                                        <label class="custom-control-label" for="defaultUnchecked">yes</label>
+                                        <input type="radio" class="custom-control-input" id="defaultChecked"
+                                                name="defaultExampleRadios" checked>
+                                        <label class="custom-control-label" for="defaultChecked">No</label>
+                                </div>
+
+                        </div>
+                        <h3>Educational Work</h3>
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <select class="mdb-select md-form" name="edu_qualification" required>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                                        Educational Qualifications
+
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                        class="rounded-circle">
+                                                        Graduate</option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Post Graduate
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Others
+                                                </option>
+                                        </select>
+                                </div>
+
+
+
+                                <div class="col-sm-4">
+                                        <select class="mdb-select md-form" name="occupation" required>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                                        Occupation and Employment details
+
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                        class="rounded-circle">
+                                                        Service</option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Bussiness
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Others
+                                                </option>
+                                        </select>
+                                </div>
+
+                                <div class="col-sm-4">
+                                        <select class="mdb-select md-form" value="duties" required>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                                        Nature of Duties
+
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                        class="rounded-circle">
+                                                        yes</option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        No
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Others
+                                                </option>
+                                        </select>
+                                </div>
+                        </div>
+
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <input type="text" name="NameofTheOrganization"
+                                                placeholder="Name of the Organization" required>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                                <p>Are You politically Exposed person</p>
+                        </div>
+                        <div class="row">
+                                <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="defaultUnchecked"
+                                                name="defaultExampleRadios">
+                                        <label class="custom-control-label" for="defaultUnchecked">yes</label>
+                                        <input type="radio" class="custom-control-input" id="defaultChecked"
+                                                name="defaultExampleRadios" checked>
+                                        <label class="custom-control-label" for="defaultChecked">No</label>
+                                </div>
+                        </div>
+
+                        <h3>Nominee Information</h3>
+                        <div class="row" style="background-color:lightblue ">
+                                <div class="col-sm-4">
+                                        <select class="mdb-select md-form" style="margin-left: 20px" required>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg"
+                                                        name="title"> Title
+
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                        class="rounded-circle">
+                                                        Mr.</option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Mrs.
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Ms.
+                                                </option>
+                                        </select>
+                                </div>
+                                <div class="col-sm-4">
+                                        <input type="text" name="FullName" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-sm-4">
+                                        <select class="mdb-select md-form" required>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                                        Relationship to life Assured
+
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                                        class="rounded-circle">
+                                                        yes</option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        No
+                                                </option>
+                                                <option value=""
+                                                        data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
+                                                        class="rounded-circle">
+                                                        Others
+                                                </option>
+                                        </select>
+                                </div>
+                                <div class="row" style="background-color:lightblue ">
+                                        <div class="col-sm-4">
+                                                <input type="date" name="Date" required> </div>
+                                        <div class="col-sm-4">
+                                                <input type="text" name="percentageEntittlement"
+                                                        placeholder="percentage Entittlement" required>
+                                        </div>
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <input type="submit" value="submit">
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<style>
+        .row {
+                margin: 10px;
+                line-height: 10px;
+        }
+</style>
+
+</html>
